@@ -1,0 +1,156 @@
+@charset "utf-8";
+/*移动端初始化css start*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button 
+{margin:0;padding:0;font-family:"microsoft yahei";}  /* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/
+input,select,textarea,button {vertical-align:middle;outline: none;}  /* 重置表单控件垂直居中*/
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+body {background:#fff}   /* 重置body 页面背景为白色 */
+body,th,td,input,select,textarea,button {border:none;font-family:"microsoft yahei", "黑体","宋体";} /* 重置页面文字属性 */
+a {color: currentColor;text-decoration:none}  /* 重置链接a标签 */ 
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */
+caption {display:none;}    /* 重置表格标题为隐藏 */
+table {border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */
+img{vertical-align:top}  /* 图片在当前行内的垂直位置 */
+h2{display: inline;}
+i{font-style: normal;}
+body{background: #fff;}
+html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+/* 页面设置 */
+  /* 取消a标签点击后的虚线框 */
+a {outline: none;}  
+a:active {star:expression(this.onFocus=this.blur());}
+*{box-sizing: border-box;}
+/*移动端初始化css end*/
+.textcen{
+	text-align: center;
+}
+.width{
+	width: 100%;
+}
+.ma20{
+	margin: 20px;
+}
+.pad0-20{
+	padding: 0px 20px !important;
+}
+.pad20{
+	padding: 20px;
+}
+.pad10{
+	padding: 10px;
+}
+.pad0-10{
+	padding: 0px 10px;
+}
+.fc3b{
+	color:#3B93DE;
+}
+.lh50{
+	line-height: 50px;
+}
+.lh25{
+	line-height: 25px;
+}
+.lh20{
+	line-height: 20px;
+}
+.lh30{
+	line-height: 30px;
+}
+.lh14{
+	line-height: 14px;
+}
+.ma5-0{
+	margin: 5px 0px;
+}
+.bgfff{
+	background: #fff;
+}
+.disb{
+	display: block;
+}
+.disib{
+	display: inline-block;
+}
+.macen{
+	margin: 0px auto;
+}
+.wid50{
+	width: 48%;
+}
+.ovhid{
+	overflow: hidden;
+}
+.fs12{
+	font-size: 12px;
+}
+.fs14{
+	font-size: 14px;
+}
+.fs24{
+	font-size: 24px;
+}
+.fcfb{
+	color: #fb8a38;
+}
+.fcff{
+	color: #fff;
+}
+.pat50{
+	padding-top: 50px;
+}
+.sca8{
+	transform: scale(0.8);
+}
+.mat30{
+	margin-top: 30px;
+}
+.mat20{
+	margin-top: 20px !important;
+}
+.mar5{
+	margin-right: 5px;
+}
+.mat5{
+	margin-top: 5px !important;
+}
+.mar10{
+	margin-right: 10px;
+}
+.mar20{
+	margin-right: 20px;
+}
+.mar30{
+	margin-right: 30px;
+}
+.bore31{
+	border-right: 1px solid #e3e3e3;
+}
+.borb31{
+	border-bottom: 1px solid #e3e3e3;
+}
+.fs16{
+	font-size: 16px;
+}
+#laydate_box{
+	left: 40px !important;
+}
+.borad4{
+	border-radius: 4px;
+}
+.slider div.desc{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+	line-height: 20px;
+	color: #fff;
+	padding: 10px;
+	height: 100px;
+}
