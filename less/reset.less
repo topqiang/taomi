@@ -8,12 +8,12 @@
 @bgc:#F5F8Fa;
 @bgbtn: #3d87ff;
 @borcol:#EF6353;
+@blue:#436cfd;
 body{
    background: @bgc; 
 }
 .content{
     max-width: 500px;
-    margin: 0px auto 50px;
     background: @bgc;
     overflow: hidden;
 }
@@ -28,6 +28,12 @@ body{
 }
 .bgz{
     background: rgb(@r,@g,@b);
+}
+.colbl{
+    color: @blue;
+}
+.bor1b{
+    border:1px solid @blue;
 }
 .bgbtn{
     background: @bgbtn !important;
@@ -57,7 +63,7 @@ body{
     background: #F5092C;
 }
 .bgf{
-    background: #f2f2f2;
+    background: #f1f1f1;
 }
 .colb{
     color: #FFFFFF !important;
@@ -119,6 +125,9 @@ body{
     border-radius: 4px;
     border: 1px solid @borcol;
 }
+.bobtn{
+    line-height: 25px;
+}
 .borbtnh{
     color: #333;
     padding: 5px 20px;
@@ -143,6 +152,9 @@ body{
         .bgimg('../img/checkon.png',0px,center,20px,20px);
     }
 }
+.bora50{
+    border-radius: 50%;
+}
 header{
     .lh(@toph);
     position: fixed;
@@ -151,15 +163,27 @@ header{
     width: 100%;
     .textcen;
     .bgz;
-    padding: 0px 50px 0px 75px;
+    padding: 0px 50px;
     span.local{
         padding: 25px;
         .labelimg('../img/msg.png',@toph);
-        &.on{
-           .labelimg('../img/hasmsg.png',@toph);
-        }
+    }
+    span.rigshe{
+        padding: 25px;
+        .bgimg('../img/rigshe.png',center,center,6px,20px);
     }
 }
+//红色小脚表
+.jiaob{
+    top: 7px;
+    right: 8px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    .bora50;
+}
+
+
 .searchdiv{
     height: 30px;
     border-radius: 8px;
@@ -260,13 +284,6 @@ footer{
         }
     }
 }
-
-
-
-
-
-
-
 //横向区块
 .line(@left:40px,@top:20px,@px:1px,@solid:solid){
     margin-top: @top;
@@ -327,6 +344,38 @@ footer{
 .iconrmsc{
     padding-left: 30px;
     .bgimg('../img/rmsc.png',0px,center,20px,20px);
+}
+.iconsys{
+    padding: 20px 10px 20px 80px;
+    .bgimg('../img/iconsys.png',20px,center,50px,50px);
+}
+.iconord{
+    padding: 20px 10px 20px 80px;
+    .bgimg('../img/iconord.png',20px,center,50px,50px);
+}
+.iconv{
+    padding: 20px 25px;
+    border-left: 1px solid #E3E3E3;
+    .bgimg('../img/v.png',10px,center,20px,20px);
+    &.on{
+        .bgimg('../img/h.png',10px,center,20px,20px);
+    }
+}
+.iconsanj{
+    padding-right: 15px;
+    .bgimg('../img/sanj.png',right,center,10px,10px);
+    &.on{
+        .colp;
+        .bgimg('../img/sanjon.png',right,center,10px,10px);
+    }
+}
+.unum{
+    display: inline-block;
+    top: 10px;left: 65px;background: #FF4444;border-radius: 50%;width: 10px;height: 10px;
+}
+.right{
+    padding: 8px 10px;
+    .bgimg('../img/right.png',5px,center,8px,15px);
 }
 //nav
 .xqnav{
@@ -433,7 +482,13 @@ footer{
 .goodlist{
     margin-bottom: 20px;
 }
-.good{
+//顶部   工具条
+.topbar{
+    padding-right: 50px;
+}
+
+
+.goodh{
     width: 50%;
     padding: 20px 0px 10px;
     margin-bottom:6px; 
@@ -457,5 +512,146 @@ footer{
     .goodname{
         height: 40px;
         .ovhid;
+    }
+}
+
+.good{
+    height: 120px;
+    .imgbag{
+        .fl;
+        width: 30%;
+        height: 120px;
+        .ovhid;
+        img{
+            height: 120px;
+        }
+    }
+    .pad0-10{
+        height: 120px;
+        border-bottom: 1px solid #E3E3E3;
+        padding-top: 15px;
+    }
+    >div{
+        .ovhid;
+    }
+    .goodname{
+        height: 40px;
+        .ovhid;
+    }
+}
+
+
+//分类页
+.tab{
+    .ovhid;
+}
+//商品分类
+.classify{
+    .fl;
+    width: 25%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    div{
+        .textcen;
+        .lh(@toph);
+        border-bottom: 1px solid #e5e5e5;
+        &.on{
+            .bgb;
+        }
+    }
+}
+//主体内容
+.conmain{
+    .fr;
+    width: 75%;
+    > div{
+         padding: 0px 10px;
+    }
+    .contitle{
+        .lh(30px);
+    }
+    .warelist{
+        .bgb;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: auto;
+    }
+}
+.wh20{
+    line-height: 16px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+//回顶部
+.gohead{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    .bora50;
+    .ovhid;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+//三角符号
+.sanjia{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.sanjia:after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+    right: 5px;
+    top: 20px;
+}
+//品牌logo
+.ware{
+    width: 33.33%;
+    img{
+        width: 100%;
+    }
+    span{
+        .texovh;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 65%;
+    }
+}
+
+.shopobj{
+    margin-bottom: 10px;
+    .shop{
+        height: 90px;
+        img{
+            height: 50px;
+            width: 50px;
+        }
+        .shopdec{
+            margin-left: 10px;
+            display: inline-block;
+            height: 50px;
+        }
+    }
+    
+}
+.slgoods{
+    .slgood{
+        padding-bottom: 20px;
+        width: 25%;
+        img{
+            width: 90%;
+        }
+        .slgprice{
+            right: 5px;
+            bottom: 20px;
+            padding: 0px 5px;
+        }
     }
 }

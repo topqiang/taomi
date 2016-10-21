@@ -48,6 +48,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 .pad0-10{
 	padding: 0px 10px;
 }
+.pad5-0{
+	padding: 5px 0px;
+}
 .fc3b{
 	color:#3B93DE;
 }
@@ -62,6 +65,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 }
 .lh30{
 	line-height: 30px;
+}
+.lh40{
+	line-height: 40px;
 }
 .lh14{
 	line-height: 14px;

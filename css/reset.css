@@ -4,7 +4,6 @@ body {
 }
 .content {
   max-width: 500px;
-  margin: 0px auto 50px;
   background: #f5f8fa;
   overflow: hidden;
 }
@@ -19,6 +18,12 @@ body {
 }
 .bgz {
   background: #1b1b1b;
+}
+.colbl {
+  color: #436cfd;
+}
+.bor1b {
+  border: 1px solid #436cfd;
 }
 .bgbtn {
   background: #3d87ff !important;
@@ -48,7 +53,7 @@ body {
   background: #F5092C;
 }
 .bgf {
-  background: #f2f2f2;
+  background: #f1f1f1;
 }
 .colb {
   color: #FFFFFF !important;
@@ -96,6 +101,9 @@ body {
   border-radius: 4px;
   border: 1px solid #ef6353;
 }
+.bobtn {
+  line-height: 25px;
+}
 .borbtnh {
   color: #333;
   padding: 5px 20px;
@@ -116,6 +124,9 @@ body {
   background: url('../img/checkon.png') 0px center no-repeat transparent;
   background-size: 20px 20px;
 }
+.bora50 {
+  border-radius: 50%;
+}
 header {
   height: 50px;
   line-height: 50px;
@@ -125,7 +136,7 @@ header {
   width: 100%;
   text-align: center;
   background: #1b1b1b;
-  padding: 0px 50px 0px 75px;
+  padding: 0px 50px;
 }
 header span.local {
   padding: 25px;
@@ -134,11 +145,18 @@ header span.local {
   background: url('../img/msg.png') 10px center no-repeat;
   background-size: 24px 24px;
 }
-header span.local.on {
-  height: 50px;
-  line-height: 50px;
-  background: url('../img/hasmsg.png') 10px center no-repeat;
-  background-size: 24px 24px;
+header span.rigshe {
+  padding: 25px;
+  background: url('../img/rigshe.png') center center no-repeat transparent;
+  background-size: 6px 20px;
+}
+.jiaob {
+  top: 7px;
+  right: 8px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 .searchdiv {
   height: 30px;
@@ -315,6 +333,50 @@ footer > div span {
   background: url('../img/rmsc.png') 0px center no-repeat transparent;
   background-size: 20px 20px;
 }
+.iconsys {
+  padding: 20px 10px 20px 80px;
+  background: url('../img/iconsys.png') 20px center no-repeat transparent;
+  background-size: 50px 50px;
+}
+.iconord {
+  padding: 20px 10px 20px 80px;
+  background: url('../img/iconord.png') 20px center no-repeat transparent;
+  background-size: 50px 50px;
+}
+.iconv {
+  padding: 20px 25px;
+  border-left: 1px solid #E3E3E3;
+  background: url('../img/v.png') 10px center no-repeat transparent;
+  background-size: 20px 20px;
+}
+.iconv.on {
+  background: url('../img/h.png') 10px center no-repeat transparent;
+  background-size: 20px 20px;
+}
+.iconsanj {
+  padding-right: 15px;
+  background: url('../img/sanj.png') right center no-repeat transparent;
+  background-size: 10px 10px;
+}
+.iconsanj.on {
+  color: #ef6353;
+  background: url('../img/sanjon.png') right center no-repeat transparent;
+  background-size: 10px 10px;
+}
+.unum {
+  display: inline-block;
+  top: 10px;
+  left: 65px;
+  background: #FF4444;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.right {
+  padding: 8px 10px;
+  background: url('../img/right.png') 5px center no-repeat transparent;
+  background-size: 8px 15px;
+}
 .xqnav {
   padding-bottom: 10px;
   color: #666666;
@@ -412,29 +474,164 @@ footer > div span {
 .goodlist {
   margin-bottom: 20px;
 }
-.good {
+.topbar {
+  padding-right: 50px;
+}
+.goodh {
   width: 50%;
   padding: 20px 0px 10px;
   margin-bottom: 6px;
 }
-.good:nth-child(2n+1) {
+.goodh:nth-child(2n+1) {
   float: left;
   margin-left: -3px;
 }
-.good:nth-child(2n) {
+.goodh:nth-child(2n) {
   float: right;
   margin-right: -3px;
 }
-.good .imgbag {
+.goodh .imgbag {
   width: 100%;
   max-height: 250px;
   overflow: hidden;
 }
-.good .imgbag img {
+.goodh .imgbag img {
   width: 100%;
   max-height: 250px;
+}
+.goodh .goodname {
+  height: 40px;
+  overflow: hidden;
+}
+.good {
+  height: 120px;
+}
+.good .imgbag {
+  float: left;
+  width: 30%;
+  height: 120px;
+  overflow: hidden;
+}
+.good .imgbag img {
+  height: 120px;
+}
+.good .pad0-10 {
+  height: 120px;
+  border-bottom: 1px solid #E3E3E3;
+  padding-top: 15px;
+}
+.good > div {
+  overflow: hidden;
 }
 .good .goodname {
   height: 40px;
   overflow: hidden;
+}
+.tab {
+  overflow: hidden;
+}
+.classify {
+  float: left;
+  width: 25%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.classify div {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.classify div.on {
+  background: #fff !important;
+}
+.conmain {
+  float: right;
+  width: 75%;
+}
+.conmain > div {
+  padding: 0px 10px;
+}
+.conmain .contitle {
+  height: 30px;
+  line-height: 30px;
+}
+.conmain .warelist {
+  background: #fff !important;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+.wh20 {
+  line-height: 16px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+.gohead {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.gohead img {
+  width: 100%;
+  height: 100%;
+}
+.sanjia {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.sanjia:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #fff;
+  right: 5px;
+  top: 20px;
+}
+.ware {
+  width: 33.33%;
+}
+.ware img {
+  width: 100%;
+}
+.ware span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 65%;
+}
+.shopobj {
+  margin-bottom: 10px;
+}
+.shopobj .shop {
+  height: 90px;
+}
+.shopobj .shop img {
+  height: 50px;
+  width: 50px;
+}
+.shopobj .shop .shopdec {
+  margin-left: 10px;
+  display: inline-block;
+  height: 50px;
+}
+.slgoods .slgood {
+  padding-bottom: 20px;
+  width: 25%;
+}
+.slgoods .slgood img {
+  width: 90%;
+}
+.slgoods .slgood .slgprice {
+  right: 5px;
+  bottom: 20px;
+  padding: 0px 5px;
 }

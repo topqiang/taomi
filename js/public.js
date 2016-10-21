@@ -101,6 +101,38 @@ function top_select(){
 		}
 	});
 }
+
+/**
+ * @name 回顶部
+ * @author topqiang
+ * @version 1.0
+ * **/
+function top_gohead(){
+	$(".top_gohead").on('click',function(){
+		var height = $(document).scrollTop();
+		$("html,body").animate({scrollTop:0},500);
+	});
+}
+
+/**
+ * @name  切换商品查看样式
+ * @author topqiang
+ * @version 1.0
+ * **/
+function top_jeep(){
+	$(".iconv").on('click',function(){
+		var self = $(this);
+		if(self.hasClass('on')){
+			$(".good").removeClass('good').addClass('goodh');
+		}else{
+			$(".goodh").removeClass('goodh').addClass('good');
+		}
+		self.toggleClass('on');
+	});
+}
+
+
+
 $(function(){
 	//吊起linkto增强页面跳转
 	top_linkto();
@@ -112,4 +144,8 @@ $(function(){
 	top_ingley();
 	//吊起统一下拉框
 	top_select();
+	//吊起回顶部
+	top_gohead();
+	//切换预览商品版图
+	top_jeep();
 });
