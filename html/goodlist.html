@@ -18,26 +18,23 @@
     </head>
     <body>
     	<header class="bgz colb">
-    		<span class="pfr rigshe pore">
-    			<span class="jiaob poab bgr colb fs12 textcen lh14">3</span>
-    		</span>
+    		<span class="icongley pore"></span>
     		<span class="left" linkto="javascript:history.go(-1)"></span>
     		<div class="pore mat10 searchdiv">
     			<input class="poab fs12" placeholder="男士正装时尚西服"/>
     			<span class="search pfr"></span>
     		</div>
     	</header>
-		<div class="content" style="padding-top: 50px;">
-			
-			<div class="pore bgb borb31">
-				<div class="disf topbar lh40">
-					<span>综合排序</span>
-					<span class="iconsanj on">销量</span>
-					<span class="iconsanj">价格</span>
-					<span class="iconsanj">刷选</span>
-				</div>
-				<div class="poab iconv pfr on"></div>
+    	<div class="pofi bgb borb31" style="top: 50px;width: 100%;">
+			<div class="disf topbar lh40">
+				<span class="colbl dosifting">综合排序</span>
+				<span class="iconsanj on">销量</span>
+				<span class="iconsanj">价格</span>
+				<span class="iconsanj">刷选</span>
 			</div>
+			<div class="poab iconv pfr on"></div>
+		</div>
+		<div class="content" style="padding-top: 90px;">
 			
 		  	<div class="goodlist ovhid mat10">
 		   		<div class="good bgb">
@@ -168,6 +165,41 @@
 		   			</div>
 		   		</div>
 		   	</div>
+		   	<div class="sifting bgb">
+		   		<div class="pad20 borb31 lh40">
+		   			价格区间(￥)
+		   			<input class="bgf" />——<input class="bgf" />
+		   		</div>
+				<ul class="lh50 pad0-20">
+					<li class="borb31 pore">
+						<span class="right fr mat15"></span>
+						<span class="fr colbl mar5" ele="city">天津市</span>
+						<span>配送城市:</span>
+						<select class="poab selpstime" forele="city">
+							<option>天津市</option>
+							<option>芜湖市</option>
+							<option>天坛市</option>
+							<option>北京市</option>
+						</select>
+					</li>
+					<li class="borb31 pore">
+						<span class="right fr mat15"></span>
+						<span class="fr colbl mar5" ele="classify">所有分类</span>
+						<span>商品分类:</span>
+						<select class="poab selpstime" forele="classify">
+							<option>所有分类</option>
+							<option>商品风</option>
+							<option>耐克</option>
+							<option>杰克琼斯</option>
+						</select>
+					</li>
+				</ul>
+				<div class="textcen mat20">
+					<span class="bor1b colbl textcen pad0-10 borad4">重置</span>
+				</div>
+				
+				<div class="botarea bgz textcen colb lh50">确认</div>
+			</div>
 		</div>
 		<div class="disib gohead top_gohead">
 			<img src="../img/gohead.png" />
@@ -175,5 +207,7 @@
     </body>
 	<script type="text/javascript" src="../js/touch.min.js"></script>
     <script type="text/javascript">
+    	var h = document.documentElement ? document.documentElement.clientHeight : document.body.clientHeight;
+    	$(".sifting").height(h-91);
 	</script>
 </html>   

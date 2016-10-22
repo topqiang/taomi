@@ -131,8 +131,16 @@ function top_jeep(){
 	});
 }
 
-
-
+/**
+ * @name 分类筛选
+ * @author topqiang
+ * @version 1.0
+ * **/
+function top_sifting(){
+	$(".dosifting").on('click',function(){
+		$(".sifting").slideToggle();
+	});
+}
 $(function(){
 	//吊起linkto增强页面跳转
 	top_linkto();
@@ -148,4 +156,6 @@ $(function(){
 	top_gohead();
 	//切换预览商品版图
 	top_jeep();
+	//吊起分类刷选事件
+	top_sifting();
 });

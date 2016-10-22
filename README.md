@@ -13,3 +13,7 @@ one like as tmall
 >shoplist.html		店铺列表
 >goodlist.html		商品列表
 >sousuo.html		搜索列表页
+
+综合排序刷选    商品参数选择
+>goodinfo.html		商品详情页面
+>ratelist.html		评价列表页面

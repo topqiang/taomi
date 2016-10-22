@@ -13,12 +13,17 @@ body{
    background: @bgc; 
 }
 .content{
+    -webkit-overflow-scrolling: touch;
+    margin: 0px auto;
     max-width: 500px;
     background: @bgc;
     overflow: hidden;
 }
 .textcen{
     text-align: center;
+}
+.bgc{
+    background: @bgc;
 }
 .pore{
     position: relative;
@@ -89,6 +94,12 @@ body{
 }
 .colg{
     color: #42bdcc;
+}
+.bge{
+    background: #E3E3E3;
+}
+.bgyel{
+    background: #ff902d;
 }
 .colr{
     color: #F5092C !important;
@@ -165,12 +176,12 @@ header{
     .bgz;
     padding: 0px 50px;
     span.local{
-        padding: 25px;
+        padding: 25px 15px;
         .labelimg('../img/msg.png',@toph);
     }
     span.rigshe{
-        padding: 25px;
-        .bgimg('../img/rigshe.png',center,center,6px,20px);
+        padding: 25px 15px;
+        .bgimg('../img/rigshe.png',0px,center,6px,25px);
     }
 }
 //红色小脚表
@@ -353,6 +364,10 @@ footer{
     padding: 20px 10px 20px 80px;
     .bgimg('../img/iconord.png',20px,center,50px,50px);
 }
+.iconsafe{
+    padding-left: 55px;
+    .bgimg('../img/safe.png',20px,center,30px,30px,#f6f6f6);
+}
 .iconv{
     padding: 20px 25px;
     border-left: 1px solid #E3E3E3;
@@ -361,20 +376,42 @@ footer{
         .bgimg('../img/h.png',10px,center,20px,20px);
     }
 }
+.iconjian{
+   .bgimg('../img/del.png',center,center,20px,20px); 
+}
+.iconadd{
+   .bgimg('../img/add.png',center,center,20px,20px); 
+}
 .iconsanj{
     padding-right: 15px;
     .bgimg('../img/sanj.png',right,center,10px,10px);
     &.on{
-        .colp;
+        .colbl;
         .bgimg('../img/sanjon.png',right,center,10px,10px);
     }
+}
+.iconstore{
+    padding: 5px 20px 5px 40px;
+    .bgimg('../img/store.png',10px,center,20px,20px);
+}
+.icongley{
+    right: 40px;
+    display: inline-block;
+    padding: 25px 15px;
+    .bgimg('../img/botgley.png',center,center,25px,25px);
+}
+.iconclose{
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    .bgimg('../img/close.png',center,center,20px,20px);
 }
 .unum{
     display: inline-block;
     top: 10px;left: 65px;background: #FF4444;border-radius: 50%;width: 10px;height: 10px;
 }
 .right{
-    padding: 8px 10px;
+    padding: 10px 10px;
     .bgimg('../img/right.png',5px,center,8px,15px);
 }
 //nav
@@ -458,6 +495,13 @@ footer{
         width: 100%;
     }
 }
+.selpstime{
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
 //ad3
 .ad3{
     div{
@@ -486,7 +530,17 @@ footer{
 .topbar{
     padding-right: 50px;
 }
-
+.playgley{
+    .disf;
+    .lh(20px);
+    .textcen;
+    color: #000000;
+    width: 90px;
+    margin-top: 15px;
+    span{
+        width: 20px;
+    }
+}
 
 .goodh{
     width: 50%;
@@ -586,7 +640,7 @@ footer{
 .gohead{
     position: fixed;
     right: 10px;
-    bottom: 10px;
+    bottom: 130px;
     width: 50px;
     height: 50px;
     .bora50;
@@ -653,5 +707,128 @@ footer{
             bottom: 20px;
             padding: 0px 5px;
         }
+    }
+}
+//商品筛选框
+.sifting{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    input{
+        width: 70px;
+        height: 20px;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+}
+.rate{
+    padding-bottom: 10px;
+    .usinfo{
+        img{
+            width: 40px;
+            height: 40px;
+            .bora50;
+        }
+    }
+    .ratedesc{
+        height: 45px;
+        overflow: hidden;
+    }
+}
+.gishop{
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    .gishopinfo{
+        >div{
+            width: 33.33%;
+            border-right: 1px solid #E3E3E3;
+            &:last-child{
+               border-right: 0px; 
+            }
+        }
+    }
+}
+//底部btnbar
+.botbtn{
+    div{
+        padding: 30px 10px 0px 10px;
+        &:nth-child(1){
+            .bgimg('../img/dianpu.png',center,5px,auto,25px);
+        }
+        &:nth-child(2){
+            .bgimg('../img/conlection.png',center,5px,auto,25px);
+            &.on{
+                .bgimg('../img/conlectionon.png',center,5px,auto,25px);
+            }
+        }
+        &:nth-child(3){
+            .bgimg('../img/icongley.png',center,5px,auto,25px);
+        }
+    }
+}
+.gooddesc{
+    img{
+        width: 100% !important;
+    }
+}
+
+//遮罩层
+.zhao{
+    position: fixed;
+    z-index: 9;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+//遮罩层主体内容
+.zhcon{
+    bottom: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.checkgood{
+    width: 100%;
+    padding: 20px 5px;
+    .bagimg{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        margin-top: -50px;
+        padding: 5px;
+        border: 1px solid #EEEEEE;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.chimlist{
+    display: flex;
+    justify-content: flex-start;
+    span{
+        margin-right: 10px;
+        padding: 5px 20px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        &.on{
+            .bor1b;
+            .colbl;
+            .bgimg('../img/rigbot.png',right,bottom,15px,15px);
+        }
+    }
+}
+.rateimg{
+    width: 100%;
+    overflow-y: auto;
+    white-space: nowrap;
+    img{
+        margin-right: 10px;
+        height: 40px;
     }
 }

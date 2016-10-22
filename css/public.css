@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*移动端初始化css start*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button 
-{margin:0;padding:0;font-family:"microsoft yahei";}  /* 初始化标签在所有浏览器中的margin、padding值 */
+{margin:0;padding:0;}  /* 初始化标签在所有浏览器中的margin、padding值 */
 fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
 dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
 blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
@@ -9,7 +9,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none} 
 input,select,textarea,button {vertical-align:middle;outline: none;}  /* 重置表单控件垂直居中*/
 button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
 body {background:#fff}   /* 重置body 页面背景为白色 */
-body,th,td,input,select,textarea,button {border:none;font-family:"microsoft yahei", "黑体","宋体";} /* 重置页面文字属性 */
+body,th,td,input,select,textarea,button {border:none;font-family: "Source Han Sans","宋体";} /* 重置页面文字属性 */
 a {color: currentColor;text-decoration:none}  /* 重置链接a标签 */ 
 a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */
@@ -75,6 +75,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 .ma5-0{
 	margin: 5px 0px;
 }
+.mat15{
+	margin-top: 15px;
+}
 .bgfff{
 	background: #fff;
 }
@@ -111,6 +114,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 .pat50{
 	padding-top: 50px;
 }
+.pad10-20{
+	padding: 10px 20px;
+}
 .sca8{
 	transform: scale(0.8);
 }
@@ -134,6 +140,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 }
 .mar30{
 	margin-right: 30px;
+}
+.pofi{
+	position: fixed;
 }
 .bore31{
 	border-right: 1px solid #e3e3e3;
@@ -159,4 +168,22 @@ a:active {star:expression(this.onFocus=this.blur());}
 	color: #fff;
 	padding: 10px;
 	height: 100px;
+}
+.focus1 > div{
+	left: 50% !important;
+  transform: translateX(-50%);
+}
+.focus1 span{
+		width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    border:1px solid #436cfd;
+}
+.focus1 span.current{
+		background: #436cfd;
+}
+.focus1 {
+    background: rgba(0, 0, 0, 0) !important;
 }
