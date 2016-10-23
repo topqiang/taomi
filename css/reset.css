@@ -150,15 +150,15 @@ header {
   padding: 0px 50px;
 }
 header span.local {
-  padding: 25px 15px;
+  padding: 25px 25px;
   height: 50px;
   line-height: 50px;
   background: url('../img/msg.png') 10px center no-repeat;
   background-size: 24px 24px;
 }
 header span.rigshe {
-  padding: 25px 15px;
-  background: url('../img/rigshe.png') 0px center no-repeat transparent;
+  padding: 25px 25px;
+  background: url('../img/rigshe.png') center center no-repeat transparent;
   background-size: 6px 25px;
 }
 .jiaob {
@@ -395,7 +395,7 @@ footer > div span {
 .icongley {
   right: 40px;
   display: inline-block;
-  padding: 25px 15px;
+  padding: 25px 25px;
   background: url('../img/botgley.png') center center no-repeat transparent;
   background-size: 25px 25px;
 }
