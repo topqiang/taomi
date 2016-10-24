@@ -82,6 +82,9 @@ body {
 .colg {
   color: #42bdcc;
 }
+.col2 {
+  color: #ffc60e;
+}
 .bge {
   background: #E3E3E3;
 }
@@ -112,6 +115,12 @@ body {
   border-radius: 4px;
   border: 1px solid #ef6353;
 }
+.borbtnb {
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
 .bobtn {
   line-height: 25px;
 }
@@ -120,6 +129,9 @@ body {
   padding: 5px 20px;
   border-radius: 4px;
   border: 1px solid #333;
+}
+.bor1px {
+  border-right: 1px solid #eee;
 }
 .botarea {
   height: 50px;
@@ -160,6 +172,12 @@ header span.rigshe {
   padding: 25px 25px;
   background: url('../img/rigshe.png') center center no-repeat transparent;
   background-size: 6px 25px;
+}
+header .cenimg {
+  padding-top: 12px;
+}
+header .cenimg img {
+  height: 26px;
 }
 .jiaob {
   top: 7px;
@@ -301,6 +319,32 @@ footer > div span {
 .line > div:last-child {
   border-bottom: 0px;
 }
+.orderline {
+  margin-top: 10px;
+  background: #fff !important;
+}
+.orderline > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 20px;
+}
+.orderline > div:last-child {
+  border-bottom: 0px;
+}
+.formline {
+  margin-top: 0px;
+  background: #fff !important;
+}
+.formline > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 10px;
+}
+.formline > div:last-child {
+  border-bottom: 0px;
+}
 .getcode {
   margin-top: 10px;
   height: 30px;
@@ -339,6 +383,31 @@ footer > div span {
   background: url('../img/tshh.png') 0px center no-repeat transparent;
   background-size: 20px 20px;
 }
+.iconlx {
+  padding-left: 25px;
+  background: url('../img/iconlx.png') 0px center no-repeat transparent;
+  background-size: 16px 16px;
+}
+.iconline {
+  padding-left: 10px;
+  background: url('../img/bline.png') 0px center no-repeat transparent;
+  background-size: 5px 14px;
+}
+.iconhh {
+  padding-top: 40px;
+  background: url('../img/iconhh.png') 10px 0px no-repeat #ffffff;
+  background-size: auto 40px;
+}
+.iconhd {
+  padding-top: 40px;
+  background: url('../img/iconhd.png') 10px 0px no-repeat #ffffff;
+  background-size: auto 40px;
+}
+.iconhfw {
+  padding-top: 40px;
+  background: url('../img/iconhfw.png') 10px 0px no-repeat #ffffff;
+  background-size: auto 40px;
+}
 .iconrmsc {
   padding-left: 30px;
   background: url('../img/rmsc.png') 0px center no-repeat transparent;
@@ -358,6 +427,14 @@ footer > div span {
   padding-left: 55px;
   background: url('../img/safe.png') 20px center no-repeat #f6f6f6;
   background-size: 30px 30px;
+}
+.iconedi {
+  background: url('../img/iconedit.png') 10px center no-repeat transparent;
+  background-size: 20px 20px;
+}
+.icondel {
+  background: url('../img/icondel.png') 10px center no-repeat transparent;
+  background-size: 20px 20px;
 }
 .iconv {
   padding: 20px 25px;
@@ -573,11 +650,11 @@ footer > div span {
 .good .imgbag {
   float: left;
   width: 30%;
-  height: 120px;
+  height: 100px;
   overflow: hidden;
 }
 .good .imgbag img {
-  height: 120px;
+  height: 100px;
 }
 .good .pad0-10 {
   height: 120px;
@@ -626,7 +703,7 @@ footer > div span {
   overflow-y: auto;
 }
 .wh20 {
-  line-height: 16px;
+  line-height: 20px;
   text-align: center;
   width: 20px;
   height: 20px;
@@ -675,14 +752,14 @@ footer > div span {
 .shopobj {
   margin-bottom: 10px;
 }
-.shopobj .shop {
+.shop {
   height: 90px;
 }
-.shopobj .shop img {
+.shop img {
   height: 50px;
   width: 50px;
 }
-.shopobj .shop .shopdec {
+.shop .shopdec {
   margin-left: 10px;
   display: inline-block;
   height: 50px;
@@ -811,4 +888,114 @@ footer > div span {
 .rateimg img {
   margin-right: 10px;
   height: 40px;
+}
+.ordaddress {
+  background: #fff !important;
+  height: 100px;
+  border-image: url('../img/borimg.png') 15 repeat;
+}
+.newadd {
+  padding-left: 90px;
+  height: 100px;
+  line-height: 100px;
+  background: url('../img/newadd.png') 25px center no-repeat transparent;
+  background-size: 50px auto;
+}
+.ediadd {
+  padding: 20px 40px 20px 60px;
+  height: 100px;
+  line-height: 30px;
+  background: url('../img/addre.png') 25px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.ediadd > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.address {
+  background: #fff !important;
+  margin-bottom: 10px;
+}
+.address > div {
+  padding: 0px 20px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.address .playadd {
+  border-top: 1px solid #E1E1E1;
+}
+.address .playadd span {
+  padding-left: 40px;
+}
+.topnav {
+  background: #4558ff;
+  height: 60px;
+}
+.topnav > div {
+  width: 33.33%;
+  padding-top: 40px;
+}
+.topnav > div:nth-child(1) {
+  background: url('../img/topnav1.png') center 5px no-repeat rgba(255, 255, 255, 0.5);
+  background-size: 30px 30px;
+}
+.topnav > div:nth-child(1).on {
+  background: url('../img/topnav1.png') center 5px no-repeat rgba(255, 255, 255, 0);
+  background-size: 30px 30px;
+}
+.topnav > div:nth-child(2) {
+  background: url('../img/topnav2.png') center 5px no-repeat rgba(255, 255, 255, 0.5);
+  background-size: 30px 30px;
+}
+.topnav > div:nth-child(2).on {
+  background: url('../img/topnav2.png') center 5px no-repeat rgba(255, 255, 255, 0);
+  background-size: 30px 30px;
+}
+.topnav > div:nth-child(3) {
+  background: url('../img/topnav3.png') center 5px no-repeat rgba(255, 255, 255, 0.5);
+  background-size: 30px 30px;
+}
+.topnav > div:nth-child(3).on {
+  background: url('../img/topnav3.png') center 5px no-repeat rgba(255, 255, 255, 0);
+  background-size: 30px 30px;
+}
+.shopinfo {
+  height: 180px;
+  background: url('../img/topbgdp.png') 0px 0px no-repeat transparent;
+  background-size: 100% 100%;
+}
+.shopinfo .shoplogo img {
+  height: 50px;
+  width: 50px;
+}
+.hdgood {
+  display: flex;
+  justify-content: space-between;
+}
+.hdgood > div {
+  width: 33%;
+}
+.hdgood > div img {
+  width: 100px;
+}
+.shoptop {
+  height: 120px;
+  padding-top: 50px;
+  background: url('../img/shopbg.png') 0px 0px no-repeat transparent;
+  background-size: 100% 120px;
+}
+.shoptop .borad4 {
+  width: 68px;
+  padding-top: 30px;
+  background: url('../img/iconcoll.png') center 2px no-repeat rgba(255, 255, 255, 0.2);
+  background-size: 20px 20px;
+}
+.shoptop .borad4.on {
+  color: #ffc60e;
+  background: url('../img/iconcollon.png') center 2px no-repeat rgba(255, 255, 255, 0.2);
+  background-size: 20px 20px;
 }

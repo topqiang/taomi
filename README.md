@@ -17,3 +17,11 @@ one like as tmall
 综合排序刷选    商品参数选择
 >goodinfo.html		商品详情页面
 >ratelist.html		评价列表页面
+
+>setorder.html		确认提交订单
+>addresslist.html	收货地址列表
+>faxian.html		发现页面
+>faxiangood.html	发现好货页面
+>faxianshop.html	发现好店页面
+>collection.html	收藏列表页面
+>shopinfo.html		店铺详情页面

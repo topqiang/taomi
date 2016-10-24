@@ -95,6 +95,9 @@ body{
 .colg{
     color: #42bdcc;
 }
+.col2{
+    color: rgb(255, 198, 14);
+}
 .bge{
     background: #E3E3E3;
 }
@@ -136,6 +139,13 @@ body{
     border-radius: 4px;
     border: 1px solid @borcol;
 }
+.borbtnb{
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
 .bobtn{
     line-height: 25px;
 }
@@ -150,6 +160,9 @@ body{
     .lh(@height);
     background: url(@url) 10px center no-repeat;
     background-size: 24px 24px;
+}
+.bor1px{
+    border-right : 1px solid #eee;
 }
 .botarea{
     height: 50px;
@@ -182,6 +195,12 @@ header{
     span.rigshe{
         padding: 25px 25px;
         .bgimg('../img/rigshe.png',center,center,6px,25px);
+    }
+    .cenimg{
+        padding-top: 12px;
+        img{
+            height: 26px;
+        }
     }
 }
 //红色小脚表
@@ -317,6 +336,12 @@ footer{
     padding: 0px 5px;
     .line;
 }
+.orderline{
+    .line(20px,10px);
+}
+.formline{
+    .line(10px,0px);
+}
 .getcode{
     margin-top: 10px;
     .lh(30px);
@@ -352,6 +377,26 @@ footer{
     padding-left: 30px;
     .bgimg('../img/tshh.png',0px,center,20px,20px);
 }
+.iconlx{
+    padding-left: 25px;
+    .bgimg('../img/iconlx.png',0px,center,16px,16px);
+}
+.iconline{
+    padding-left: 10px;
+    .bgimg('../img/bline.png',0px,center,5px,14px);
+}
+.iconhh{
+    padding-top: 40px;
+    .bgimg('../img/iconhh.png',10px,0px,auto,40px,#fff);
+}
+.iconhd{
+    padding-top: 40px;
+    .bgimg('../img/iconhd.png',10px,0px,auto,40px,#fff);
+}
+.iconhfw{
+    padding-top: 40px;
+    .bgimg('../img/iconhfw.png',10px,0px,auto,40px,#fff);
+}
 .iconrmsc{
     padding-left: 30px;
     .bgimg('../img/rmsc.png',0px,center,20px,20px);
@@ -367,6 +412,12 @@ footer{
 .iconsafe{
     padding-left: 55px;
     .bgimg('../img/safe.png',20px,center,30px,30px,#f6f6f6);
+}
+.iconedi{
+    .bgimg('../img/iconedit.png',10px,center,20px,20px);
+}
+.icondel{
+    .bgimg('../img/icondel.png',10px,center,20px,20px);
 }
 .iconv{
     padding: 20px 25px;
@@ -574,10 +625,10 @@ footer{
     .imgbag{
         .fl;
         width: 30%;
-        height: 120px;
+        height: 100px;
         .ovhid;
         img{
-            height: 120px;
+            height: 100px;
         }
     }
     .pad0-10{
@@ -631,7 +682,7 @@ footer{
     }
 }
 .wh20{
-    line-height: 16px;
+    line-height: 20px;
     text-align: center;
     width: 20px;
     height: 20px;
@@ -681,7 +732,8 @@ footer{
 
 .shopobj{
     margin-bottom: 10px;
-    .shop{
+}
+.shop{
         height: 90px;
         img{
             height: 50px;
@@ -693,8 +745,6 @@ footer{
             height: 50px;
         }
     }
-    
-}
 .slgoods{
     .slgood{
         padding-bottom: 20px;
@@ -830,5 +880,106 @@ footer{
     img{
         margin-right: 10px;
         height: 40px;
+    }
+}
+//收货地址展现
+//新建收获地址
+.ordaddress{
+    .bgb;
+    height: 100px;
+    border-image:url('../img/borimg.png')15 repeat;
+}
+.newadd{
+    padding-left: 90px;
+    .lh(100px);
+    .bgimg('../img/newadd.png',25px,center,50px,auto);
+}
+.ediadd{
+    padding: 20px 40px 20px 60px;
+    height: 100px;
+    line-height: 30px;
+    .bgimg('../img/addre.png',25px,center,20px,auto);
+    >div{
+       .texovh; 
+    }
+}
+//收货地址列表
+.address{
+    .bgb;
+    margin-bottom: 10px;
+    > div{
+        padding: 0px 20px;
+        .lh(40px);
+        .texovh;
+    }
+    .playadd{
+        border-top: 1px solid #E1E1E1;
+        span{
+            padding-left: 40px;
+        }
+    }
+}
+//topbar
+.topnav{
+    background: rgb(69, 88, 255);
+    height: 60px;
+    >div{
+        width: 33.33%;
+        padding-top: 40px;
+        &:nth-child(1){
+            .bgimg('../img/topnav1.png',center,5px,30px,30px,rgba(255,255,255,0.5));
+            &.on{
+                .bgimg('../img/topnav1.png',center,5px,30px,30px,rgba(255,255,255,0));
+            }
+        }
+        &:nth-child(2){
+            .bgimg('../img/topnav2.png',center,5px,30px,30px,rgba(255,255,255,0.5));
+            &.on{
+            .bgimg('../img/topnav2.png',center,5px,30px,30px,rgba(255,255,255,0));                
+            }
+        }
+        &:nth-child(3){
+            .bgimg('../img/topnav3.png',center,5px,30px,30px,rgba(255,255,255,0.5));
+            &.on{
+            .bgimg('../img/topnav3.png',center,5px,30px,30px,rgba(255,255,255,0));                
+            }
+        }
+    }
+}
+//商家好店详情
+.shopinfo{
+    height: 180px;
+    .bgimg('../img/topbgdp.png',0px,0px,100%,100%);
+    .shoplogo{
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+//好店商品
+.hdgood{
+    display: flex;
+    justify-content:space-between;
+    > div{
+        width: 33%;
+        img{
+            width: 100px;
+        }
+    }
+}
+//店铺详情顶部
+.shoptop{
+    height: 120px;
+    padding-top: 50px;
+    .bgimg('../img/shopbg.png',0px,0px,100%,120px);
+    .borad4{
+        width: 68px;
+        padding-top: 30px;
+        .bgimg('../img/iconcoll.png',center,2px,20px,20px,rgba(255, 255, 255, 0.2));
+        &.on{
+            .col2;
+        .bgimg('../img/iconcollon.png',center,2px,20px,20px,rgba(255, 255, 255, 0.2));
+        }
     }
 }
