@@ -25,3 +25,13 @@ one like as tmall
 >faxianshop.html	发现好店页面
 >collection.html	收藏列表页面
 >shopinfo.html		店铺详情页面
+
+>gley.html			购物车页面
+>self.html			我的页面
+>set.html			设置页面
+>btel.html			绑定手机号页面
+>setpwd.html			设置登录密码
+>updpwd.html			修改登录密码
+>about.html			关于我们
+>selfinfo.html		个人资料
+>orderlist.html		订单列表页

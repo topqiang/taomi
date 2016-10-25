@@ -336,12 +336,17 @@ footer{
     padding: 0px 5px;
     .line;
 }
+.lines{
+    padding: 0px 5px;
+    .line(40px,0px);
+}
 .orderline{
     .line(20px,10px);
 }
 .formline{
     .line(10px,0px);
 }
+
 .getcode{
     margin-top: 10px;
     .lh(30px);
@@ -419,6 +424,12 @@ footer{
 .icondel{
     .bgimg('../img/icondel.png',10px,center,20px,20px);
 }
+.icongdel{
+    .bgimg('../img/icondel.png',center,15px,20px,20px);
+}
+.iconggley{
+    .bgimg('../img/ggley.png',center,15px,20px,20px);
+}
 .iconv{
     padding: 20px 25px;
     border-left: 1px solid #E3E3E3;
@@ -451,11 +462,65 @@ footer{
     padding: 25px 25px;
     .bgimg('../img/botgley.png',center,center,25px,25px);
 }
+.iconset{
+    right: 40px;
+    display: inline-block;
+    padding: 25px 25px;
+    .bgimg('../img/iconset.png',center,center,25px,25px);
+}
 .iconclose{
     top: 10px;
     right: 10px;
     padding: 10px;
     .bgimg('../img/close.png',center,center,20px,20px);
+}
+.icondd{
+    .bgimg('../img/selfdd.png',10px,center,20px,auto);
+}
+.iconqb{
+    .bgimg('../img/selfqb.png',10px,center,20px,auto);
+}
+.icondz{
+    .bgimg('../img/selfdz.png',10px,center,20px,auto);
+}
+.iconpj{
+    .bgimg('../img/selfpj.png',10px,center,20px,auto);
+}
+.iconzj{
+    .bgimg('../img/selfzj.png',10px,center,20px,auto);
+}
+.iconyq{
+    .bgimg('../img/selfyq.png',10px,center,20px,auto);
+}
+.iconfx{
+    .bgimg('../img/selffx.png',10px,center,20px,auto);
+}
+.iconjf{
+    .bgimg('../img/selfjf.png',10px,center,20px,auto);
+}
+.iconax{
+    .bgimg('../img/selfax.png',10px,center,20px,auto);
+}
+.icontl{
+    .bgimg('../img/selftl.png',10px,center,20px,auto);
+}
+.iconbz{
+    .bgimg('../img/selfbz.png',10px,center,20px,auto);
+}
+.iconabme{
+    .bgimg('../img/iconabme.png',10px,center,20px,auto);
+}
+.iconbtel{
+    .bgimg('../img/iconbtel.png',10px,center,20px,auto);
+}
+.iconupdpwd{
+    .bgimg('../img/updpwd.png',10px,center,20px,auto);
+}
+.iconage{
+    .bgimg('../img/iconage.png',10px,center,20px,auto);
+}
+.iconname{
+    .bgimg('../img/iconname.png',10px,center,20px,auto);
 }
 .unum{
     display: inline-block;
@@ -622,9 +687,10 @@ footer{
 
 .good{
     height: 120px;
+    padding: 10px 0px;
     .imgbag{
         .fl;
-        width: 30%;
+        width: 100px;
         height: 100px;
         .ovhid;
         img{
@@ -693,12 +759,11 @@ footer{
     right: 10px;
     bottom: 130px;
     width: 50px;
-    height: 50px;
+    height: auto;
     .bora50;
     .ovhid;
     img{
         width: 100%;
-        height: 100%;
     }
 }
 //三角符号
@@ -980,6 +1045,92 @@ footer{
         &.on{
             .col2;
         .bgimg('../img/iconcollon.png',center,2px,20px,20px,rgba(255, 255, 255, 0.2));
+        }
+    }
+}
+.gleygood{
+    padding-left: 40px;
+    .bgimg('../img/gley.png',10px,center,20px,20px,#fff);
+    &.on{
+    .bgimg('../img/gleyon.png',10px,center,20px,20px,#fff);
+    }
+}
+//
+.fl100{
+    float: left;
+    width: 40px;
+    height: 100px;
+}
+//增加减少 商品数量
+.playgood{
+    padding-right: 33.33px;
+    height: 100px;
+    .playbtn{
+        height: 100px;
+        padding-top: 10px;
+        div{
+            padding-top: 50px;
+        }
+    }
+    .localmana{
+        top: 0px;
+        right: 0px;
+        span{
+            display: block;
+            width: 33.33px;
+            height: 33.33px;
+            &:nth-child(2){
+                text-align: center;
+                line-height: 20px;
+                margin: 6.5px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+//个人中心头部
+.selftop .fl{
+    img.hearder{
+        width: 50px;
+        height: 50px;
+        .bora50;
+        border: 2px solid #e3e3e3;
+    }
+    img.ulevel{
+        width: 20px;
+        height: 20px;
+    }
+}
+//头部 设置头像setphoto
+.setphoto{
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+//订单里面商品列表
+.ogoodlist{
+    .good{
+        margin-top: 5px;
+        &:first-child{
+            margin-top: 0px;
+        }
+    }
+}
+//订单头部导航
+.shopbar{
+    .lh(40px);
+    .bgb;
+    .disf;
+    .textcen;
+    div{
+        &.on{
+            .colbl;
+            border-bottom:2px solid @blue;
         }
     }
 }

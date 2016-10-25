@@ -319,6 +319,20 @@ footer > div span {
 .line > div:last-child {
   border-bottom: 0px;
 }
+.lines {
+  padding: 0px 5px;
+  margin-top: 0px;
+  background: #fff !important;
+}
+.lines > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 40px;
+}
+.lines > div:last-child {
+  border-bottom: 0px;
+}
 .orderline {
   margin-top: 10px;
   background: #fff !important;
@@ -436,6 +450,14 @@ footer > div span {
   background: url('../img/icondel.png') 10px center no-repeat transparent;
   background-size: 20px 20px;
 }
+.icongdel {
+  background: url('../img/icondel.png') center 15px no-repeat transparent;
+  background-size: 20px 20px;
+}
+.iconggley {
+  background: url('../img/ggley.png') center 15px no-repeat transparent;
+  background-size: 20px 20px;
+}
 .iconv {
   padding: 20px 25px;
   border-left: 1px solid #E3E3E3;
@@ -476,12 +498,83 @@ footer > div span {
   background: url('../img/botgley.png') center center no-repeat transparent;
   background-size: 25px 25px;
 }
+.iconset {
+  right: 40px;
+  display: inline-block;
+  padding: 25px 25px;
+  background: url('../img/iconset.png') center center no-repeat transparent;
+  background-size: 25px 25px;
+}
 .iconclose {
   top: 10px;
   right: 10px;
   padding: 10px;
   background: url('../img/close.png') center center no-repeat transparent;
   background-size: 20px 20px;
+}
+.icondd {
+  background: url('../img/selfdd.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconqb {
+  background: url('../img/selfqb.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.icondz {
+  background: url('../img/selfdz.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconpj {
+  background: url('../img/selfpj.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconzj {
+  background: url('../img/selfzj.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconyq {
+  background: url('../img/selfyq.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconfx {
+  background: url('../img/selffx.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconjf {
+  background: url('../img/selfjf.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconax {
+  background: url('../img/selfax.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.icontl {
+  background: url('../img/selftl.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconbz {
+  background: url('../img/selfbz.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconabme {
+  background: url('../img/iconabme.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconbtel {
+  background: url('../img/iconbtel.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconupdpwd {
+  background: url('../img/updpwd.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconage {
+  background: url('../img/iconage.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconname {
+  background: url('../img/iconname.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
 }
 .unum {
   display: inline-block;
@@ -646,10 +739,11 @@ footer > div span {
 }
 .good {
   height: 120px;
+  padding: 10px 0px;
 }
 .good .imgbag {
   float: left;
-  width: 30%;
+  width: 100px;
   height: 100px;
   overflow: hidden;
 }
@@ -713,13 +807,12 @@ footer > div span {
   right: 10px;
   bottom: 130px;
   width: 50px;
-  height: 50px;
+  height: auto;
   border-radius: 50%;
   overflow: hidden;
 }
 .gohead img {
   width: 100%;
-  height: 100%;
 }
 .sanjia {
   display: inline-block;
@@ -998,4 +1091,83 @@ footer > div span {
   color: #ffc60e;
   background: url('../img/iconcollon.png') center 2px no-repeat rgba(255, 255, 255, 0.2);
   background-size: 20px 20px;
+}
+.gleygood {
+  padding-left: 40px;
+  background: url('../img/gley.png') 10px center no-repeat #ffffff;
+  background-size: 20px 20px;
+}
+.gleygood.on {
+  background: url('../img/gleyon.png') 10px center no-repeat #ffffff;
+  background-size: 20px 20px;
+}
+.fl100 {
+  float: left;
+  width: 40px;
+  height: 100px;
+}
+.playgood {
+  padding-right: 33.33px;
+  height: 100px;
+}
+.playgood .playbtn {
+  height: 100px;
+  padding-top: 10px;
+}
+.playgood .playbtn div {
+  padding-top: 50px;
+}
+.playgood .localmana {
+  top: 0px;
+  right: 0px;
+}
+.playgood .localmana span {
+  display: block;
+  width: 33.33px;
+  height: 33.33px;
+}
+.playgood .localmana span:nth-child(2) {
+  text-align: center;
+  line-height: 20px;
+  margin: 6.5px;
+  width: 20px;
+  height: 20px;
+}
+.selftop .fl img.hearder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #e3e3e3;
+}
+.selftop .fl img.ulevel {
+  width: 20px;
+  height: 20px;
+}
+.setphoto {
+  height: 100px;
+  width: 100px;
+  margin: 0px auto;
+}
+.setphoto img {
+  width: 100%;
+  height: 100%;
+}
+.ogoodlist .good {
+  margin-top: 5px;
+}
+.ogoodlist .good:first-child {
+  margin-top: 0px;
+}
+.shopbar {
+  height: 40px;
+  line-height: 40px;
+  background: #fff !important;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  text-align: center;
+}
+.shopbar div.on {
+  color: #436cfd;
+  border-bottom: 2px solid #436cfd;
 }

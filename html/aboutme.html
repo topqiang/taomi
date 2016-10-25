@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>关于我们</title>
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../css/public.css" />
+        <link href="../css/reset.css" rel="stylesheet"/>
+        <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../js/public.js"></script>
+        <style>
+        	.content{
+        			background: url(../img/abbg.png) 0px 0px no-repeat;
+        			background-size: 100% 100%;
+        	}
+        	.image img{
+        		width: 100px;
+        	}
+        </style>
+    </head>
+    <body>
+    	<header class="bgz colb">
+    		<span class="left" linkto="javascript:history.go(-1)"></span>
+    		<span class="pfr rigshe">
+    			<span class="jiaob poab bgr colb fs12 textcen lh14">3</span>
+    		</span>
+    		关于我们
+    	</header>
+    	<div class="content" style="margin-top: 50px;">
+	    	<div class="mat30 textcen lh45">
+		  		<div class="image">
+		  			<img src="../img/logoh.png" />
+		  		</div>
+		  		<div class="mat20">版本：1.0.0</div>
+		  	</div>
+		  	
+		  	<div class="textcen poab" style="width:250px;bottom: 40px;margin-left: 50%;transform: translateX(-50%);">
+		  		<div>北京淘米公社有限公司</div>
+		  		<div class="cole fs12 mat20">Copyright@2013-2015 淘米公社 all rights reserved</div>
+		  	</div>
+	</div>
+	<script type="text/javascript">
+		var h = document.documentElement ? document.documentElement.clientHeight : document.body.clientHeight;
+		$(".content").css({'height':h-50});
+	</script>
+    </body>
+</html>
