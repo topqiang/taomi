@@ -16,7 +16,7 @@ one like as tmall
 
 综合排序刷选    商品参数选择
 >goodinfo.html		商品详情页面
->ratelist.html		评价列表页面
+>goodrate.html		评价列表页面
 
 >setorder.html		确认提交订单
 >addresslist.html	收货地址列表
@@ -35,3 +35,12 @@ one like as tmall
 >about.html			关于我们
 >selfinfo.html		个人资料
 >orderlist.html		订单列表页
+
+>wuliu.html			物流详情页面
+>orderinfo.html		订单详情页面
+>ratelist.html		评价列表
+>rate.html			评价页面
+>paytype.html		选择支付方式
+>moneybag.html		我的钱包
+>banklist.html		银行卡列表
+>addbank.html		添加银行卡

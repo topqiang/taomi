@@ -82,6 +82,9 @@ body {
 .colg {
   color: #42bdcc;
 }
+.bgg {
+  background: #42bdcc;
+}
 .col2 {
   color: #ffc60e;
 }
@@ -512,6 +515,13 @@ footer > div span {
   background: url('../img/close.png') center center no-repeat transparent;
   background-size: 20px 20px;
 }
+.icondell {
+  top: -5px;
+  right: -5px;
+  padding: 10px;
+  background: url('../img/icondell.png') center center no-repeat transparent;
+  background-size: 20px 20px;
+}
 .icondd {
   background: url('../img/selfdd.png') 10px center no-repeat transparent;
   background-size: 20px auto;
@@ -526,6 +536,46 @@ footer > div span {
 }
 .iconpj {
   background: url('../img/selfpj.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.icondpj {
+  padding-left: 40px;
+  background: url('../img/dpj.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconolx {
+  padding-left: 40px;
+  background: url('../img/olx.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconots {
+  padding-left: 40px;
+  background: url('../img/ots.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.icondsh {
+  padding-left: 40px;
+  background: url('../img/dsh.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.icondzf {
+  padding-left: 40px;
+  background: url('../img/icondzf.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconyjs {
+  padding-left: 40px;
+  background: url('../img/iconyjs.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.icondfh {
+  padding-left: 40px;
+  background: url('../img/dfh.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.iconocg {
+  padding-left: 40px;
+  background: url('../img/ocg.png') 10px center no-repeat transparent;
   background-size: 20px auto;
 }
 .iconzj {
@@ -560,8 +610,55 @@ footer > div span {
   background: url('../img/iconabme.png') 10px center no-repeat transparent;
   background-size: 20px auto;
 }
+.iconwx {
+  background: url('../img/iconwx.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconzfb {
+  background: url('../img/iconzfb.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconchz {
+  background: url('../img/iconchz.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconmx {
+  background: url('../img/iconmx.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.icontx {
+  background: url('../img/icontx.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconyueh {
+  padding-left: 40px;
+  background: url('../img/iconyueh.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconjs {
+  padding-left: 40px;
+  background: url('../img/iconjs.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconyl {
+  background: url('../img/iconyl.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconyue {
+  background: url('../img/iconyue.png') 0px center no-repeat transparent;
+  background-size: 30px auto;
+}
+.iconcancel {
+  height: 40px;
+  line-height: 40px;
+  top: 10px;
+  right: 10px;
+  padding: 0px 10px 0px 40px;
+  background: url('../img/cancel.png') 10px center no-repeat #436cfd;
+  background-size: 20px auto;
+}
 .iconbtel {
-  background: url('../img/iconbtel.png') 10px center no-repeat transparent;
+  background: url('../img/iconbtel.png') 10px center no-repeat #436cfd;
   background-size: 20px auto;
 }
 .iconupdpwd {
@@ -575,6 +672,15 @@ footer > div span {
 .iconname {
   background: url('../img/iconname.png') 10px center no-repeat transparent;
   background-size: 20px auto;
+}
+.iconcheck {
+  padding: 25px 15px;
+  background: url('../img/gley.png') right center no-repeat transparent;
+  background-size: 20px 20px;
+}
+.iconcheck.on {
+  background: url('../img/gleyon.png') right center no-repeat transparent;
+  background-size: 20px 20px;
 }
 .unum {
   display: inline-block;
@@ -882,7 +988,7 @@ footer > div span {
   border-radius: 4px;
 }
 .rate {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .rate .usinfo img {
   width: 40px;
@@ -974,13 +1080,36 @@ footer > div span {
   background-size: 15px 15px;
 }
 .rateimg {
+  margin: 10px 0px;
   width: 100%;
   overflow-y: auto;
   white-space: nowrap;
 }
 .rateimg img {
   margin-right: 10px;
-  height: 40px;
+  height: 80px;
+}
+.ratelevel span {
+  display: inline-block;
+  padding: 5px 10px;
+}
+.ratelevel span.on {
+  color: #436cfd;
+}
+.setlevel span.borbtnh {
+  border-radius: 13px;
+  margin-right: 30px;
+  position: relative;
+}
+.setlevel span.borbtnh.on:after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: -4px;
+  right: -4px;
+  background: url('../img/gleyon.png') 0px 0px no-repeat transparent;
+  background-size: 15px 15px;
 }
 .ordaddress {
   background: #fff !important;
@@ -1002,6 +1131,18 @@ footer > div span {
   background-size: 20px auto;
 }
 .ediadd > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.busto {
+  padding: 20px 40px 20px 60px;
+  height: 100px;
+  line-height: 30px;
+  background: url('../img/busto.png') 25px center no-repeat transparent;
+  background-size: 20px auto;
+}
+.busto > div {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1170,4 +1311,76 @@ footer > div span {
 .shopbar div.on {
   color: #436cfd;
   border-bottom: 2px solid #436cfd;
+}
+.wltop {
+  height: 100px;
+}
+.wltop .poab {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wltop .poab img {
+  width: 100px;
+  height: 100px;
+}
+.wltop .wlinfo {
+  padding-left: 60px;
+  margin-left: 50px;
+  height: 80px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: #3d87ff !important;
+  line-height: 27px;
+}
+.wllist {
+  border-left: 2px solid #e3e3e3;
+}
+.wllist > div {
+  position: relative;
+  padding: 10px 0px;
+  color: #767676;
+}
+.wllist > div:before {
+  border: 2px solid #e3e3e3;
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #E3E3E3;
+  left: -58px;
+  top: 20px;
+}
+.wllist > div.on {
+  color: #42bdcc;
+}
+.wllist > div.on:before {
+  background: #42bdcc;
+}
+.upimg div {
+  float: left;
+  width: 30%;
+  border: 1px solid #E1E1E1;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+.upimg div img {
+  width: 100%;
+  height: 120px;
+}
+.upimg div:last-child {
+  margin-right: 0px;
+}
+.paytype {
+  padding-left: 20px;
+}
+.paytype > div .iconcheck {
+  padding: 25px 15px;
+  background: url('../img/gley.png') right center no-repeat transparent;
+  background-size: 20px 20px;
+}
+.paytype > div.on .iconcheck {
+  background: url('../img/gleyon.png') right center no-repeat transparent;
+  background-size: 20px 20px;
 }

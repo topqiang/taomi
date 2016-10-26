@@ -42,6 +42,12 @@ a:active {star:expression(this.onFocus=this.blur());}
 .pad20{
 	padding: 20px;
 }
+.mar0-50{
+	margin: 0px 50px;
+}
+.padl50{
+	padding-left: 50px;
+}
 .pad10{
 	padding: 10px;
 }
@@ -95,6 +101,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 }
 .ovhid{
 	overflow: hidden;
+}
+span.stop{
+	opacity: 0.4;
 }
 .fs12{
 	font-size: 12px;

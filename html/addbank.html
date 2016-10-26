@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>添加银行卡</title>
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../css/public.css" />
+        <link href="../css/reset.css" rel="stylesheet"/>
+        <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../js/public.js"></script>
+        <style>
+        	
+        </style>
+    </head>
+    <body>
+    	<header class="bgz colb">
+    		<span class="left"></span>
+    		添加银行卡
+    	</header>
+		<div class="content" style="padding-top: 50px;">
+			<div class="fs12 textcen lh25">信息加密处理，仅限于银行验证</div>
+			<div class="formline">
+				<div>
+					<span class="disib" style="width: 100px;">持卡人：</span>
+					<input type="text" placeholder="持卡人姓名"/>
+				</div>
+				<div>
+					<span class="disib" style="width: 100px;">卡号：</span>
+					<input type="number" placeholder="银行卡卡号"/>
+				</div>
+				<div class="pore">
+					<span class="right fr mat15"></span>
+					<span class="disib" style="width: 100px;">卡类型：</span>
+					<span class="cole fs14" ele="bank">开户行</span>
+					<select class="poab selpstime" forele="bank">
+						<option>建行</option>
+						<option>招行</option>
+						<option>农行</option>
+						<option>民行</option>
+					</select>
+				</div>
+				<div>
+					<span class="disib" style="width: 100px;">身份证号：</span>
+					<input type="text" placeholder="持卡人身份证号"/>
+				</div>
+				<div>
+					<span class="disib" style="width: 100px;">手机号：</span>
+					<input type="number" placeholder="银行预留手机号"/>
+				</div>
+			</div>
+			<div class="lh50 pad0-20 colbl ovhid">
+   				<span class="fl disib top_check iconcheck pad20 mar10"></span>
+   				<span class="">阅读 <span linkto="agreement.html">《用户协议》</span></span>
+   			</div>
+			<div class="big-btn bgz">下一步</div>
+		</div>
+    </body>
+	<script type="text/javascript" src="../js/touch.min.js"></script>
+</html>
