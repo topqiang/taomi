@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>捐助详情</title>
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../css/public.css" />
+        <link href="../css/reset.css" rel="stylesheet"/>
+        <script src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/yxMobileSlider.js" ></script>
+        <script type="text/javascript" src="../js/public.js"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+    	<header class="bgz colb">
+    		<span class="left" linkto="javascript:history.go(-1)"></span>
+    		捐助详情
+    	</header>
+		<div class="content" style="padding: 50px 0px;">
+			<div class="slider">
+		      	<ul>
+		            <li><a href="#" target="_blank"><img src="../img/lovehelp.png" alt="" class="width"></a></li>
+		            <li><a href="#" target="_blank"><img src="../img/lovehelp.png" alt="" class="width"></a></li>
+		            <li><a href="#" target="_blank"><img src="../img/lovehelp.png" alt="" class="width"></a></li>
+		            <li><a href="#" target="_blank"><img src="../img/lovehelp.png" alt="" class="width"></a></li>
+		      	</ul>
+		  </div>
+		   <div class="pad0-20 bgb">
+		   		<div class="lh40">绿顶蓝天计划</div>
+		   		<div class="fs12 lh20 cole">美娟20元，即可绿化0.067平方米城市屋顶。美娟20元，即可绿化0.067平方米城市屋顶</div>
+			   	<div class="mat5 pore range" total="15" cur="6" style="height: 6px;border: 3px;"><span></span></div>
+		   		<div class="mat10 disf textcen lh30 bor1san pad5-0">
+			  		<div>
+			  			<div class="colbl">6,000</div>
+			  			<div class="">已筹金额(元)</div>
+			  		</div>
+			  		<div>
+			  			<div class="colbl">6,000</div>
+			  			<div class="">目标金额(元)</div>
+			  		</div>
+			  		<div>
+			  			<div class="colbl">2333</div>
+			  			<div class="">收到爱心(份)</div>
+			  		</div>
+			  	</div>
+		   </div>
+		   <div class="mat10 pad0-20 lh40 cole bgb">
+		  		<span class="fr">022-1234567</span>
+		  		<span>联系电话</span>
+		  	</div>
+		  	
+		  	<div class="pad0-20 mat10 bgb">
+		  		<div class="lh40 cole">项目详情</div>
+		  		<div class="mat10">
+		  			
+		  		</div>
+		  	</div>
+		  	
+		  	
+		  	<div class="pad10-20 bgb mat10 cole">
+	    		<div class="lh40">捐助动态</div>
+	    		<div class="mat10 rate borb31">
+	    			<div class="lh40 usinfo">
+	    				<img src="../img/header.png" />
+	    				<span class="">Y***U</span>
+	    			</div>
+	    			<div class="lh14 fs14 ma5-0">
+	    				很棒，衣服穿起来显身材，品质也不错。很棒，衣服穿起来显身材，品质也不错。很棒，衣服穿起来显身材，品质也不错。
+	    			</div>
+	    			<div class="cole">
+	    				<span class="fs14 cole fr">2016-09-08</span>
+	    				<span class="mar10">型号：180</span>
+	    				<span class="">颜色：青蓝</span>
+	    			</div>
+	    		</div>
+	    		<div class="textcen pad10">
+    				<span class="pad5-10 lh30 bor1b colbl borad4" linkto="ratelist.html">查看全部评价</span>
+    			</div>
+		  	
+		  	
+		</div>
+		<div class="putmoney botarea bgz colb textcen lh50">
+			我要捐款
+		</div>
+		
+		
+		<div class="zhao" style="display: none;">
+		    	<div class="pad0-20 poab zhcon bgb">
+				<div class="lh50">捐助金额(元)</div>
+				<div class="mat10 borbtnh">
+					<input type="text" placeholder="请输入金额"/>
+				</div>
+				
+				<div class="bgz big-btn mat20">
+			    		立即捐助
+			    	</div>
+				<span class="iconclose poab"></span>
+		    	</div>
+		    	<div class="botarea bgb">
+		    		<div class="lh50 pad0-20 ovhid fs12">
+	   				<span class="fl disib top_check iconcheck pad20 mar10"></span>
+	   				<span class="">阅读并同意<span class="colbl">《淘米公社爱心捐助用户协议》</span></span>
+	   			</div>
+		    	</div>
+		</div>
+		<div class="disib gohead top_gohead">
+			<img src="../img/gohead.png" />
+		</div>
+    </body>
+	<script type="text/javascript" src="../js/touch.min.js"></script>
+        <script type="text/javascript">
+			var w = document.documentElement?document.documentElement.clientWidth:document.body.clientWidth;
+			$(".slider").yxMobileSlider({width:w,height:160,during:3000});
+			
+			
+			$(".putmoney").on('tap',function(){
+				$(".zhao").slideDown(500);
+			});
+			
+			$(".iconclose").on('tap',function(){
+				$(".zhao").slideUp();
+			});
+		</script>
+</html>   

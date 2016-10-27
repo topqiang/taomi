@@ -141,6 +141,23 @@ function top_sifting(){
 		$(".sifting").slideToggle();
 	});
 }
+/**
+ * @name range
+ * @author topqiang
+ * @version 1.0
+ * */
+function top_range(){
+	$(".range").each(function(){
+		var self = $(this);
+		var total = self.attr("total");
+		var cur = self.attr("cur");
+		var width = cur / total * 100;
+		self.find("span").css({"width" : width+"%" });
+	});
+}
+
+
+
 $(function(){
 	//吊起linkto增强页面跳转
 	top_linkto();
@@ -158,4 +175,6 @@ $(function(){
 	top_jeep();
 	//吊起分类刷选事件
 	top_sifting();
+	//显示进度条
+	top_range();
 });

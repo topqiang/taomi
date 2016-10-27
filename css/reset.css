@@ -553,6 +553,11 @@ footer > div span {
   background: url('../img/ots.png') 10px center no-repeat transparent;
   background-size: 20px auto;
 }
+.iconzuan {
+  padding-left: 40px;
+  background: url('../img/iconzuan.png') 10px center no-repeat transparent;
+  background-size: 20px auto;
+}
 .icondsh {
   padding-left: 40px;
   background: url('../img/dsh.png') 10px center no-repeat transparent;
@@ -857,7 +862,7 @@ footer > div span {
   height: 100px;
 }
 .good .pad0-10 {
-  height: 120px;
+  height: 110px;
   border-bottom: 1px solid #E3E3E3;
   padding-top: 15px;
 }
@@ -1383,4 +1388,48 @@ footer > div span {
 .paytype > div.on .iconcheck {
   background: url('../img/gleyon.png') right center no-repeat transparent;
   background-size: 20px 20px;
+}
+.invitetop {
+  background-size: 100% 200px;
+}
+.bor1san > div {
+  width: 33.33%;
+  border-left: 1px solid #E5E5E5;
+}
+.bor1san > div:first-child {
+  border-left: 0px;
+}
+.bor1four > div {
+  width: 28%;
+  border-left: 1px solid #E5E5E5;
+}
+.bor1four > div:first-child {
+  width: 16%;
+  border-left: 0px;
+}
+.rangepar {
+  height: 220px;
+  padding: 0px 30px;
+}
+.rangepar > div {
+  height: 40px;
+  padding: 14px 35px 14px 50px;
+}
+.range {
+  overflow: hidden;
+  height: 12px;
+  border-radius: 6px;
+  width: 100%;
+  background: rgba(61, 135, 255, 0.4);
+}
+.range span {
+  transition: width 1s ease-in;
+  border-radius: 6px;
+  display: inline-block;
+  width: 0px;
+  background: #3d87ff !important;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
