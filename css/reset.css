@@ -400,6 +400,11 @@ footer > div span {
   background: url('../img/tshh.png') 0px center no-repeat transparent;
   background-size: 20px 20px;
 }
+.iconhb {
+  padding-left: 40px;
+  background: url('../images/iconhb.png') 0px center no-repeat transparent;
+  background-size: auto 30px;
+}
 .iconlx {
   padding-left: 25px;
   background: url('../img/iconlx.png') 0px center no-repeat transparent;
@@ -1432,4 +1437,40 @@ footer > div span {
   position: absolute;
   left: 0px;
   top: 0px;
+}
+.getjifen {
+  width: 100%;
+  height: 60px;
+}
+.getjifen .linecon {
+  width: 100%;
+  top: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+.getjifen .jifenday .arc {
+  display: inline-block;
+  border-radius: 0px 0px 4px #666;
+  width: 30px;
+  border-radius: 50%;
+  background: #E3E3E3;
+  color: #767676;
+  height: 30px;
+  line-height: 30px;
+}
+.getjifen .jifenday .msg {
+  margin-top: 10px;
+}
+.getjifen .jifenday.on .arc {
+  color: #FFFFFF !important;
+  background: #3d87ff;
+}
+.getjifen .jifenday.on .msg {
+  color: #436cfd;
+}
+.lineh {
+  width: 90%;
+  height: 10px;
+  margin: 0px auto;
+  background: #E3E3E3;
 }

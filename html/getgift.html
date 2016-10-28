@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>转盘抽奖</title>
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../css/public.css" />
+        <link href="../css/reset.css" rel="stylesheet"/>
+        <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../js/public.js"></script>
+        <script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/Rotate.js"></script>
+        <style>
+		*{padding:0; margin:0;}
+		.lotteryBg{
+			width:100%;
+			height: 300px;
+			margin:0 auto;
+			position:relative;
+			overflow:hidden;
+		}
+		#run{
+			width:80px;
+			height:auto;
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-left:-40px;
+			margin-top:-64px;
+			z-index:1;
+			transform-origin: 40px 50px;
+			transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+		}
+		#btn_run{
+		width:64px;
+		height:64px;
+		background:url(../images/btn_start.png) no-repeat;
+		background-size: 100% 100%;
+		border:none; 
+		outline:none;
+		position:absolute; left:50%;
+		top:50%; 
+		margin-left:-32px;
+		margin-top:-45px;
+		z-index:2;
+		cursor:pointer;
+		}
+		.getgift{
+			margin: 0px auto;
+			height: 450px;
+			width: 300px;
+			background: url(../images/guangshu.png) no-repeat center 0px;
+			background-size: 300px auto;
+		}
+		.toptitle{
+			height: 55px;
+		}
+		.imgbtn{
+			width: 70px;
+    			top: 252px;
+   	 		left: 110px;
+		}
+</style>
+    </head>
+    <body>
+    	<header class="bgz colb">
+    		<span class="left"></span>
+    		<span class="pfr mar10 fs14 iconhb">红包抽奖</span>
+    		转盘抽奖
+    	</header>
+		<div class="content pore" style="margin-top:50px;">
+			<img src="../images/giftbg.png" class="width"/>
+			<div class="poab pfl width">
+				<div class="getgift">
+					<img src="../images/toptile.png" class="toptitle  mat20"/>
+					<div class="lotteryBg">
+				    		<img id="run" src="../images/start.png" />
+				    		<input id="btn_run" type="button" value="" />
+				    		<input class="imgbtn poab" type="image" src="../images/imgbtn.png"/>
+				    	</div>
+				</div>
+			</div>
+		</div>
+    </body>
+	<script type="text/javascript" src="../js/touch.min.js"></script>
+	<script>
+		$(function(){ 
+		     $("#btn_run,.imgbtn").click(function(){
+				$("#btn_run").attr('disabled',true).css("cursor","default"); 
+		        lottery(); 
+		    });
+		}); 
+		function lottery(){ 
+		    $.ajax({ 
+		        type: 'get', 
+		        url: '../json.js', 
+		        dataType: 'json', 
+		        cache: false, 
+		        error: function(){return false;}, 
+		        success:function(obj){
+					$("#run").rotate({ 
+						duration:3000, //转动时间 
+						angle: 0, //默认角度
+						animateTo:360*6+obj.rotate, //转动角度 
+						easing: $.easing.easeOutSine, 
+						callback: function(){ 
+							console.log(obj.results);
+							$("#btn_run").attr('disabled',false).css("cursor","pointer"); 
+						} 
+					});
+		        } 
+		    }); 
+		};
+	</script>
+</html>

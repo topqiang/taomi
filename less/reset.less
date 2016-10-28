@@ -385,6 +385,10 @@ footer{
     padding-left: 30px;
     .bgimg('../img/tshh.png',0px,center,20px,20px);
 }
+.iconhb{
+    padding-left: 40px;
+    .bgimg('../images/iconhb.png',0px,center,auto,30px);
+}
 .iconlx{
     padding-left: 25px;
     .bgimg('../img/iconlx.png',0px,center,16px,16px);
@@ -1388,4 +1392,44 @@ footer{
         height: 100%;
         .pfl;
     }
+}
+.getjifen{
+    width: 100%;
+    height: 60px;
+    .linecon{
+        width: 100%;
+        top: -10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .jifenday{
+        .arc{
+            display: inline-block;
+            border-radius: 0px 0px 4px #666;
+            width: 30px;
+            height: 30px;
+            .bora50;
+            .bge;
+            .cole;
+            .lh(30px); 
+        }
+        .msg{
+            margin-top: 10px;
+        }
+        &.on{
+           .arc{
+               .colb;
+                background: @bgbtn;
+           }
+           .msg{
+               .colbl;
+           }
+        }
+    }
+}
+.lineh{
+    width: 90%;
+    height: 10px;
+    margin: 0px auto;
+    .bge;
 }

@@ -8,29 +8,29 @@ one like as tmall
 
 >classify.html		分类页面  
 >msg.html			消息列表  
->sysmsg.html			系统消息  
+>sysmsg.html		系统消息  
 >msginfo.html		消息详情  
 >shoplist.html		店铺列表
 >goodlist.html		商品列表
->sousuo.html			搜索列表页
+>sousuo.html		搜索列表页
 
 >goodinfo.html		商品详情页面
 >goodrate.html		评价列表页面(捐助动态)
 
 >setorder.html		确认提交订单
 >addresslist.html	收货地址列表
->faxian.html			发现页面
->faxiangood.html		发现好货页面
->faxianshop.html		发现好店页面
->collection.html		收藏列表页面
+>faxian.html		发现页面
+>faxiangood.html	发现好货页面
+>faxianshop.html	发现好店页面
+>collection.html	收藏列表页面
 >shopinfo.html		店铺详情页面
 
 >gley.html			购物车页面
 >self.html			我的页面
 >set.html			设置页面
 >btel.html			绑定手机号页面
->setpwd.html			设置登录密码
->updpwd.html			修改登录密码
+>setpwd.html		设置登录密码
+>updpwd.html		修改登录密码
 >about.html			关于我们
 >selfinfo.html		个人资料
 >orderlist.html		订单列表页
@@ -44,7 +44,7 @@ one like as tmall
 >banklist.html		银行卡列表
 >addbank.html		添加银行卡
 
->result.html			结果返回页面
+>result.html		结果返回页面
 >chz.html			充值页面
 >transaction.html	账单明细
 >editadd.html		修改地址
@@ -54,3 +54,12 @@ one like as tmall
 >putinfo.html		联系方式
 >lovehelp.html		爱心帮助
 >loveinfo.html		捐助详情
+
+
+>arriveat.html		签到页面
+>afterbuy.html		申请售后
+>abmsg.html			售后进展
+>wuliuinfo.html		退款填物流号
+>floorB.html			B层
+>hislove.html		他的捐助
+>getgift.html		抽奖页面
