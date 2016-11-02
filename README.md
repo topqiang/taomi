@@ -62,4 +62,10 @@ one like as tmall
 >wuliuinfo.html		退款填物流号
 >floorB.html			B层
 >hislove.html		他的捐助
+
 >getgift.html		抽奖页面
+>giftres.html		抽奖空结果页面
+>giftresult.html		抽奖结果页面
+>hbcj.html			红包抽奖页面
+>giftresult.html		抽奖结果页面
+>loadgift			canvas抽奖页面

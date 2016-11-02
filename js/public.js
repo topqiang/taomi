@@ -4,6 +4,7 @@
  * @version 1.0
  * **/
 function top_linkto(){
+	navigator.userAgent
 	$("[linkto]").on('click',function(){
 		var self = $(this);
 		var url = $.trim(self.attr("linkto"));
